@@ -17,6 +17,11 @@ docker run \
   --volume fastnetmon-attacks:/var/log/fastnetmon_attacks \
   dmarteleto/fastnetmon
 ```
+# Editar aqruivo de notificação integrando ao telegram:
+./fastnetmon/container/fastnetmon/bin/notify.sh
+
+USERID=" "
+KEY=" "
 
 ## Como parar / iniciar / reiniciar um contêiner?
 
