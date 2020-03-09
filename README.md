@@ -1,12 +1,12 @@
-# docker-fastnetmon
+# docker-fastnetmon +  Telegram ( python )
 
 ## Что это?
 
-docker-fastnetmon -- это система обнаружения DDoS-атак [FastNetMon](https://github.com/pavel-odintsov/fastnetmon) в Docker-контейнере.
+Base [FastNetMon](https://github.com/pavel-odintsov/fastnetmon) 
 
-## Как это запустить?
+## Como executar:
 
-Для запуска контейнера выполните команду
+Para iniciar o contêiner, execute o comando:
 
 ```bash
 docker run \
@@ -20,17 +20,17 @@ docker run \
   alexanderfefelov/fastnetmon
 ```
 
-## Как остановить/запустить/перезапустить контейнер?
+## Como parar / iniciar / reiniciar um contêiner?
 
-Для управления контейнером используйте команды
+Use os comandos para gerenciar o contêiner.
 
     docker stop fastnetmon
     docker start fastnetmon
     docker restart fastnetmon
 
-## Как запустить клиента FastNetMon?
+## Como iniciar o cliente FastNetMon?
 
-Для запуска клиента воспользуйтесь командой
+Para iniciar o cliente, use o comando
 
     docker exec --tty --interactive fastnetmon /opt/fastnetmon/fastnetmon_client
 
@@ -42,18 +42,6 @@ docker run \
     docker volume inspect --format '{{.Mountpoint}}' fastnetmon
     docker volume inspect --format '{{.Mountpoint}}' fastnetmon-attacks
 
-## Как это удалить?
 
-Удалите контейнер
 
-    docker rm --force fastnetmon
 
-Удалите образ
-
-    docker image rm alexanderfefelov/fastnetmon
-
-:fire: Удалите данные
-
-    docker volume rm fastnetmon
-    docker volume rm fastnetmon-attacks
-# fastnetmon
