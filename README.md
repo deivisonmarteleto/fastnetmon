@@ -1,7 +1,5 @@
 # docker-fastnetmon +  Telegram ( python )
 
-## Что это?
-
 Base [FastNetMon](https://github.com/pavel-odintsov/fastnetmon) 
 
 ## Como executar:
