@@ -15,7 +15,7 @@ docker run \
   --volume /etc/localtime:/etc/localtime:ro \
   --volume fastnetmon:/fastnetmon \
   --volume fastnetmon-attacks:/var/log/fastnetmon_attacks \
-  alexanderfefelov/fastnetmon
+  dmarteleto/fastnetmon
 ```
 
 ## Como parar / iniciar / reiniciar um contêiner?
@@ -32,13 +32,6 @@ Para iniciar o cliente, use o comando
 
     docker exec --tty --interactive fastnetmon /opt/fastnetmon/fastnetmon_client
 
-## Где мои данные?
-
-Конфигурационные файлы, скрипты, журналы и pcap-дампы хранятся в Docker-томах,
-пути к которым можно узнать с помощью команд
-
-    docker volume inspect --format '{{.Mountpoint}}' fastnetmon
-    docker volume inspect --format '{{.Mountpoint}}' fastnetmon-attacks
 
 
 
